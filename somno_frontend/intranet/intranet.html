@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>Somno Web</title>
+	   <meta charset="utf-8">
+	    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/png" href="./../imagenes/logoicb.png" />
+    
+</head>
+<body class="grey lighten-4">
+  <nav class="blue darken-4 nav-wrapper">
+    <div class="container">
+      <a href="#" class="brand-logo">Somno Web</a>
+      <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="ingresa_sabana.html">Ingresar Sábana</a></li>
+        <li><a>Borrar Sábana</a></li>
+        <li><a>Ver gráficos en tiempo real</a></li>
+        <li></li>
+      </ul>
+      
+    </div>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="login/login.html">Ingresar Sábana</a></li>
+        <li><a>Borrar Sábana</a></li>
+        <li><a>Ver gráficos en tiempo real</a></li>
+      </ul>
+    
+  </nav>
+  <div class="container">
+    <br>
+    <h3 class="blue-text text-darken-4 center">Bienvenido a la intranet de SomnoWeb</h3>
+    <h6 class="blue-text text-darken-4 center">Aquí podrás ver el detalle del funcionamiento del proyecto Somno en tiempo real</h6><br><br>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="col s4">
+            <div class="card">
+              <br>
+              <div class="card-image center green-text text-darken-3">
+                <i class="material-icons large">add_box</i>
+              </div>
+              <div class="card-content">
+                <h5 class="blue-text text-darken-4">Ingresar Sábana</h5>
+                <p>Como usuario de Somno, puedes disponer de un dispositivo tipo "sábana" no registrado previamente en el sistema e ingresarlo para ver el monitoreo. Para eso, deberás especificar los datos que te pediremos en el formulario. Posterior a eso y una vez tengas el dispositivo en funcionamiento, podrás monitorear su funcionamiento en tiempo real </p>
+              </div>
+            </div>          
+          </div>
+          <div class="col s4">
+            <div class="card">
+              <br>
+              <div class="card-image center red-text text-darken-4">
+                <i class="material-icons large">delete</i>
+              </div>
+              <div class="card-content">
+                <h5 class="blue-text text-darken-4">Borrar Sábana</h5>
+                <p class="">Si existe un dispositivo de tipo "Sábana" que haya dejado de estar en funcionamiento, puedes borrarlo del sistema con la clave de administrador que proporcionaste al momento de ingresarla. Esto último es un sistema de seguridad para que no cualquiera pueda borrar los dispositivos</p>
+              </div>
+            </div>          
+          </div>
+          <div class="col s4">
+            <div class="card">
+              <br>
+              <div class="card-image center blue-text text-darken-2">
+                <i class="material-icons large">assessment</i>
+              </div>
+              <div class="card-content">
+                <h5 class="blue-text text-darken-4">Ver gráficos en tiempo real</h5>
+                <p>La parte mas importante del proyecto SomnoWeb, es poder monitorear el funcionamiento de los dispositivos tipo "Sábana" en tiempo real y así poderestar al tanto de cualquier anomalía presentada en un paciente en cuanto a su movimiento natural</p>
+              </div>
+            </div>          
+          </div>       
+      </div><br><br>  
+      <div class="col s12">
+        <br><br><br><br>  <br><br>
+        <div class="col s4">
+          <blockquote>
+            Este proyecto está siendo desarrollado por Jorge Joaquín Tardones Ortíz para su Tesis de Ingeniería civil Biomédica
+          </blockquote>
+          <blockquote>
+            El sistema se esta creando en plataforma web gracias a los frameworks "Django" basado en Python, y Materialize basado en CSS
+          </blockquote>
+          <blockquote>
+            Los datos del sistema están siendo guardados en el motor de base de datos PostgreSQL
+          </blockquote>
+          <blockquote>
+            Los dispositivos de tipo sabana cuentan con 23 sensores cada uno que están enviando datos constantemente a la base de datos para hacer los calculos pertinentes
+          </blockquote>
+          
+        </div>  
+        <div class="col s4">
+          <img class="responsive-img" src="./../imagenes/logoicb.png">
+        </div> 
+        <div class="col s4">
+          <blockquote>
+            Algunas de las funciones aún están en desarrollo, por lo que la página de SomnoWeb no está disponible al 100%
+          </blockquote>
+
+          
+        </div>           
+      </div>  
+    </div>    
+  </div>
+
+  
+
+  <script type="text/javascript" src="app.js"></script> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      M.AutoInit();
+    })
+  </script>
+
+</body>
+</html>
